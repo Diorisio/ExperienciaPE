@@ -1,0 +1,7 @@
+.contactenos{
+    display: flex;
+
+}
+.contactenos div p{
+    width: 60%;
+}

@@ -1,0 +1,11 @@
+.logo{
+    padding: 60px;
+
+    background-image: url("../public/images/Parque-Explora-5.jpg")
+}
+.logo p{
+    color: white;
+}
+.logo h1{
+    color: white;
+}

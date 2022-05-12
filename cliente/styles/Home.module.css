@@ -1,0 +1,45 @@
+.home{
+    background-image: url("../public/images/Parque-Explora-6.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+    
+}
+.home h1{
+    color: white;
+}
+.articulos{
+    color: rgb(31, 141, 10);
+    display: flex;
+    width: 50%; 
+    flex-direction: column-reverse;
+}
+.home div article img{
+    width: 20%;
+}
+.contenedordeurls{
+    display: flex;
+    flex-wrap: wrap;
+}
+.salas{
+    display: flex;
+    flex-direction: column;
+}
+.titulo{
+    display: flex;
+    flex-wrap: wrap;
+}
+.articulo{
+    width: 20%;
+    border: solid 1px red;
+    background: black;
+    opacity: 70%;
+}
+
+.imagenydescripcion{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.imagenydescripcion p{
+    color: aqua;
+}

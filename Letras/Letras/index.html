@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Letras - Parque Explora</title>
+    <meta name="author" content="Luis Ernesto Monsalve" />
+    <meta name="description" content="Parque Explora" />
+    <meta name="keywords" content="parque explora" />
+    <meta name="Resource-type" content="Document" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        @font-face {
+            font-family: 'PlutoRegular';
+            font-style: normal;
+            font-weight: normal;
+            src: url('src/fonts/PlutoRegular.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'PlutoLight';
+            font-style: normal;
+            font-weight: normal;
+            src: url('src/fonts/PlutoLight.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Pluto';
+            font-style: normal;
+            font-weight: normal;
+            src: url('src/fonts/OpenSans-Regular.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'Pluto', serif;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+
+        * {
+            max-width: 100%;
+        }
+
+        html,
+        body {
+            height: 100%;
+            cursor: default;
+            background-color: #ff764d;
+        }
+
+        body {
+            font-family: 'Pluto';
+        }
+
+        .section0 {
+            height: 100%;
+            width: 100%;
+            max-height: 100%;
+            max-width: 100%;
+            display: "";
+            background-image: url(src/sprites/PORTADA_web.png);
+            background-color: #ff764d;
+            background-size: contain;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .section1 {
+            height: 100%;
+            width: 100%;
+            display: none;
+            background-color: #ff764d;
+            background-size: contain;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .section2 {
+            display: none;
+            margin: 0;
+            background-color: #ffffff;
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            max-width: 100%;
+        }
+
+        .section3 {
+            height: 100%;
+            width: 100%;
+            display: none;
+            background-color: #ffffff;
+            color: #000000;
+            background-size: contain;
+            position: absolute;
+            z-index: 10;
+
+        }
+
+        .max-w {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bg-red {
+            background-color: #ff6a48;
+        }
+
+        .bg-white {
+            background-color: #ffffff;
+        }
+
+        .beat {
+            height: 5rem;
+            cursor: pointer;
+        }
+
+        .sep {
+            height: 4rem;
+            cursor: pointer;
+        }
+
+        .img-a {
+            height: 1.4rem;
+            width: auto;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: #ff6a48;
+        }
+
+        #rec {
+            content: url("src/001.png");
+            height: 5rem;
+            width: 5rem;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        #rec_ {
+            content: url("src/001.png");
+            animation-name: animate;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            height: 5rem;
+            width: 5rem;
+            background-size: cover;
+        }
+
+        @keyframes latidos {
+            from {
+                transform: none;
+            }
+
+            50% {
+                transform: scale(0.8);
+            }
+
+            to {
+                transform: none;
+            }
+        }
+
+        .animate2 {
+            animation: latidos 1s infinite;
+            transform-origin: center;
+        }
+
+        .op {
+            font-family: 'PlutoLight', serif;
+            font-size: 1rem;
+            color: #ffffff;
+            cursor: pointer;
+            background-color: #1e1c1c;
+            text-align: center;
+            display: inline;
+        }
+
+        .opf {
+            font-family: 'PlutoLight', serif;
+            font-size: 1rem;
+            color: #ffffff;
+            background-color: #ff6a48;
+            text-align: center;
+            display: inline;
+        }
+
+        .option {
+            font-family: 'PlutoRegular', serif;
+            font-size: 3rem;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        .rec-t {
+            font-family: 'PlutoRegular', serif;
+            font-size: 3rem;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        .btn {
+            font-family: 'PlutoRegular', serif;
+            font-size: 2rem;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        .animate {
+
+            animation: bganimation 1.47s infinite;
+        }
+
+        @keyframes bganimation {
+            0% {
+                background: #1e1c1c;
+            }
+
+            50% {
+                background: #eeeeee;
+            }
+
+            100% {
+                background: #1e1c1c;
+            }
+        }
+
+
+        .b {
+            cursor: pointer;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .beat {
+                height: 4rem;
+                cursor: pointer;
+            }
+
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .section0 {
+                background-image: url(src/sprites/PORTADA_movil.png);
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                z-index: 1;
+                max-height: 100%;
+                max-width: 100%;
+            }
+
+            .beat {
+                height: 3rem;
+                cursor: pointer;
+            }
+
+            .section2:fullscreen {
+                overflow: scroll !important;
+            }
+
+            .section2:-ms-fullscreen {
+                overflow: scroll !important;
+            }
+
+            .section2:-webkit-full-screen {
+                overflow: scroll !important;
+            }
+
+            .section2:-moz-full-screen {
+                overflow: scroll !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section0" id="sect0">
+
+    </section>
+
+    <section class="section2 m-0 " id="sect2">
+        <div class="container-fluid max-w m-0 p-0">
+            <div class="row h-100 w-100 max-w m-0 p-0">
+                <div class="col-12 col-md-6 bg-red m-0 p-0 w-100">
+                    <div class="row align-content-center justify-content-center  m-0 p-0 ">
+                        <div class="row h-50 w-100 justify-content-center bg-white align-items-start b m-0 p-0 "
+                            id="rec-r-m" style="display: none;">
+                            <div class="col-5 m-0 p-0 py-5 text-center">
+                                <img id="rec-b-m" class="img-fluid" src="src/animaciones/001.png" alt="">
+                            </div>
+                            <div class="col-12 m-0 p-0 py-5 rec-t text-center" id="rec-text-m" style="color: #ff6a48;">
+                                Grabar
+                            </div>
+
+                        </div>
+                        <div class="row h-50 w-100 justify-content-center bg-white text-center align-items-center b"
+                            id="play-r-m" style="display: none;">
+                            <div class="col-12 m-0 p-0 pt-3">
+                                <h1 class=" op" style="color: #111111;; background-color: #ffffff; font-size: 2rem;">
+                                    Escucha
+                                    tu grabación</h1>
+                            </div>
+                            <div class="col-5 m-0 p-0 pt-3">
+                                <img id="play-b-m" class="img-fluid" src="src/botones/stop_play/play.png" alt="">
+                            </div>
+                            <div class="col-12 m-0 p-0 py-3">
+                                <button class="btn op" type="button" id="activate-beat-m"
+                                    style="color:#ff6a48; background-color: #ffffff;">Activar
+                                    Beat</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pl-2 pt-4 justify-content-center" id="">
+                        <img src="src/botones/beats/Info_open_blanco.png" id="info-b"
+                            class="b p-1 mobile align-self-end" style="position: absolute; right: 0%; top: 0%;" alt="">
+                        <div class="col-12 col-md-10">
+                            <p>Eeehhh ooohhh <br>
+                                Así se hace una canción de Hip Hop<br>
+                                Eeehhh oohhh<br>
+                                Con buenas rimas y el palito pal flow</p>
+                        </div>
+                        <div class="col-12 col-md-10 pt-4">
+                            <p class="m-0 p-0" style="display: inline-block;">Hay que escoger el
+                                tema para <div id="t1" class="op ml-1 align-items-center"
+                                    style="height: 1.4rem; width: 8rem; display: inline-block;" alt=""
+                                    onclick="changeState(1);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                <br> Trata que todo rime a la hora de <div id="t2" class="op ml-1 align-items-center"
+                                    style="height: 1.4rem; width: 6.5rem; display: inline-block;" alt=""
+                                    onclick="changeState(2);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                <br> Cuida cada <div id="t3" class="op ml-0 align-items-center"
+                                    style="height: 1.4rem; width: 12.13rem; display: inline-block;" alt=""
+                                    onclick="changeState(3);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                <br> Deja expresar tu <div id="t4" class="op ml-1 align-items-center"
+                                    style="height: 1.4rem; width: 9.3rem; display: inline-block;" alt=""
+                                    onclick="changeState(4);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                <br> Hasta que se llene el renglón
+                                <br>
+                                <div id="t5" class="op align-items-center"
+                                    style="height: 2.7rem; width: 17.5rem; display: inline-block; font-size: 0.9rem; "
+                                    alt="" onclick="changeState(5);">
+                                    <div style="visibility: hidden;">d <br>d</div>
+                                </div>
+                                <br> Y como rima <br>
+                                <div id="t6" class="op align-items-center"
+                                    style="height: 1.4rem; width: 7rem; display: inline-block;" alt=""
+                                    onclick="changeState(6);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                con
+                                <div id="t7" class="op ml-1 align-items-center"
+                                    style="height: 1.4rem; width: 8rem; display: inline-block;" alt=""
+                                    onclick="changeState(7);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                <br> Olor con dolor
+                                <br>
+                                <div id="t8" class="op align-items-center"
+                                    style="height: 1.4rem; width: 7rem; display: inline-block;" alt=""
+                                    onclick="changeState(8);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                con
+                                <div id="t9" class="op ml-1 align-items-center"
+                                    style="height: 1.4rem; width: 8rem; display: inline-block;" alt=""
+                                    onclick="changeState(9);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                <br> Saludar con soñar
+                                <br>
+                                <div id="t10" class="op align-items-center"
+                                    style="height: 1.4rem; width: 7rem; display: inline-block;" alt=""
+                                    onclick="changeState(10);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                con
+                                <div id="t11" class="op ml-1 align-items-center"
+                                    style="height: 1.4rem; width: 8rem; display: inline-block;" alt=""
+                                    onclick="changeState(11);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                <br> Vivir con morir
+                                <br>
+                                <div id="t12" class="op align-items-center"
+                                    style="height: 1.4rem; width: 7rem; display: inline-block;" alt=""
+                                    onclick="changeState(12);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                con
+                                <div id="t13" class="op ml-1 align-items-center"
+                                    style="height: 1.4rem; width: 8rem; display: inline-block;" alt=""
+                                    onclick="changeState(13);">
+                                    <div style="visibility: hidden;">d</div>
+                                </div>
+                                <br> Eeehhh ooohhh
+                                <br> Eeehhh ooohhh <br>
+                            </p>
+                            <p>Así se hace una canción de Hip Hop, Yeah</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center align-items-center mobile max-w" id="options-m">
+                        <div class="col-12 justify-content-center" style="background-color: #ffffff;" align="center">
+                            <img id="beat1" class="img-fluid beat m-0 p-0" src="src/botones/beats/beat1_unpressed.jpg"
+                                alt="" onclick="changeBeat(1);">
+                            <img class="img-fluid sep" src="src/botones/beats/vertical.jpg" alt="">
+                            <img id="beat2" class="img-fluid beat m-0 p-0" src="src/botones/beats/beat2_unpressed.jpg"
+                                alt="" onclick="changeBeat(2);">
+                            <img class="img-fluid sep" src="src/botones/beats/vertical.jpg" alt="">
+                            <img id="beat3" class="img-fluid beat m-0 p-0" src="src/botones/beats/beat3_unpressed.jpg"
+                                alt="" onclick="changeBeat(3);">
+                            <img class="img-fluid sep" src="src/botones/beats/vertical.jpg" alt="">
+                            <img id="rapea_" class="img-fluid beat m-0 p-0" src="src/botones/beats/rapea_unpressed.jpg"
+                                alt="" onmouseover="this.src='src/botones/beats/rapea_pressed.jpg'"
+                                onmouseout="this.src='src/botones/beats/rapea_unpressed.jpg'">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 bg-white desktop  m-0 p-0">
+                    <div class="row h-25 w-100 justify-content-end align-items-start m-0 p-0" id="info-r">
+                        <img src="src/botones/beats/Info_open.jpg" id="info" class="b p-3" alt="">
+                    </div>
+                    <div class="row h-50 w-100 justify-content-center align-items-start b m-0 p-0" id="rec-r"
+                        style="display: none;">
+                        <div class="col-5 m-0 p-0 pt-5">
+                            <img id="rec-b" class="img-fluid" src="src/animaciones/001.png" alt="">
+                        </div>
+                        <div class="col-12 m-0 p-0 py-5 rec-t text-center" id="rec-text" style="color: #ff6a48;">
+                            Grabar
+                        </div>
+                    </div>
+                    <div class="row h-50 w-100 justify-content-center align-items-center text-center b m-0 p-0"
+                        id="play-r" style="display: none;">
+                        <div class="col-12 m-0 p-0 pt-3">
+                            <h1 class=" op" style="color: #111111;; background-color: #ffffff; font-size: 2rem;">Escucha
+                                tu grabación</h1>
+                        </div>
+                        <div class="col-5 m-0 p-0 pt-2">
+                            <img id="play-b" class="img-fluid" src="src/botones/stop_play/play.png" alt="">
+                        </div>
+                        <div class="col-12 m-0 p-0 py-3">
+                            <button class="btn op" type="button" id="activate-beat"
+                                style="color:#ff6a48; background-color: #ffffff;">Activar
+                                Beat</button>
+                        </div>
+                    </div>
+                    <div class="row h-50 w-100 p-0 justify-content-center align-items-center  m-0 p-0" id="options-b">
+                        <div class="col-12 m-0 p-0 ">
+                            <h1 class="option py-2 text-center w-100" id="option1" onclick="selectedOption(1);">
+                            </h1>
+                            <h1 class="option py-2 text-center w-100" id="option2" onclick="selectedOption(2);">
+                            </h1>
+                            <h1 class="option py-2 text-center w-100" id="option3" onclick="selectedOption(3);">
+                            </h1>
+                            <h1 class="option py-2 text-center w-100" id="option4" onclick="selectedOption(4);">
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="row w-100 h-25 justify-content-center align-items-center m-0 p-0" id="beats-b">
+                        <div class="col-12  m-0 p-0 pt-0 " align="center">
+                            <img id="beat1_" class="img-fluid beat m-0 p-0" src="src/botones/beats/beat1_unpressed.jpg"
+                                alt="" onclick="changeBeat(1);">
+                            <img class="img-fluid sep" src="src/botones/beats/vertical.jpg" alt="">
+                            <img id="beat2_" class="img-fluid beat m-0 p-0" src="src/botones/beats/beat2_unpressed.jpg"
+                                alt="" onclick="changeBeat(2);">
+                            <img class="img-fluid sep" src="src/botones/beats/vertical.jpg" alt="">
+                            <img id="beat3_" class="img-fluid beat m-0 p-0" src="src/botones/beats/beat3_unpressed.jpg"
+                                alt="" onclick="changeBeat(3);">
+                            <img class="img-fluid sep" src="src/botones/beats/vertical.jpg" alt="">
+                            <img id="rapea" class="img-fluid beat m-0 p-0" src="src/botones/beats/rapea_unpressed.jpg"
+                                alt="" onmouseover="this.src='src/botones/beats/rapea_pressed.jpg'"
+                                onmouseout="this.src='src/botones/beats/rapea_unpressed.jpg'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section1 m-0 pt-2" id="sect4" style="display: none; background-color: rgba(
+            0, 0, 0, 0.7); ">
+        <div style="position: relative; height: 100%; width: 100%;">
+            <img style="position: absolute; height: 4rem;" id="inst_1" src="src/tutorial/instructivo_1.png" alt="">
+            <img style="position: absolute; height: 4rem;" id="inst_2" src="src/tutorial/instructivo_2.png" alt="">
+            <img style="position: absolute; height: 4rem;" id="inst_3" src="src/tutorial/instructivo_3.png" alt="">
+            <img style="position: absolute; " id="barra_beats" src="src/tutorial/instructivo_barra_beats.png" alt="">
+            <img style="position: absolute; " id="barra_rapea" src="src/tutorial/instructivo_barra_rapea.png" alt="">
+            <img style="position: absolute; right: 4%; top: 2%; " id="close" class="b" src="src/tutorial/Info_close.png"
+                alt="">
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="optionPopup" tabindex="-1" role="dialog" aria-labelledby="optionPopupLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+            <div class="modal-content">
+                <div class="modal-body justify-content-center">
+                    <div class="row justify-content-center align-items-center py-5 px-2">
+                        <div class="col-12 m-0 p-0  ">
+                            <h1 class="option py-2 text-center w-100" id="option1_" onclick="selectedOption(1);">
+                            </h1>
+                            <h1 class="option py-2 text-center w-100" id="option2_" onclick="selectedOption(2);">
+                            </h1>
+                            <h1 class="option py-2 text-center w-100" id="option3_" onclick="selectedOption(3);">
+                            </h1>
+                            <h1 class="option py-2 text-center w-100" id="option4_" onclick="selectedOption(4);">
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+
+    <script>
+        //#1e1c1c
+        var isActive = false;
+        var beat = new buzz.sound();;
+        var urlBeat = 'src/audios/Hip_hop_2.wav';
+        var current = 0;
+        var isPlaying = false;
+        const texts = [
+            ['discutir', 'seducir', 'resistir', 'divertir'],
+            ['escribir', 'reír', 'oír', 'dormir'],
+            ['terminación', 'interacción', 'pronunciación', 'desproporción'],
+            ['corazón', 'conexión', 'rebelión', 'opinión'],
+            ['Tienes que prestar mucha atención <br> Al ejercicio que viene a continuación',
+                'Abre tu mundo con emoción <br> es el momento de una composición',
+                'Llega el momento de la expresión <br> vas a poner tu imaginación'
+            ],
+            ['pasión', 'presión', 'acción', 'rayón'],
+            ['canción', 'razón', 'tensión', 'pulmón'],
+            ['respirar', 'besar', 'tocar', 'flotar'],
+            ['cuidar', 'cobrar', 'volar', 'mimar'],
+            ['seguir', 'querer', 'comer', 'morder'],
+            ['reir', 'placer', 'poder', 'beber'],
+            ['amar', 'jugar', 'regalar', 'luchar'],
+            ['respetar', 'perdonar', 'tardear', 'bailar']
+        ]
+        selected = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+        var selectedText;
+        var recAudio;
+        var fillProgress;
+        var doc = window.document;
+        var docEl = doc.documentElement;
+        var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl
+            .webkitRequestFullScreen ||
+            docEl.msRequestFullscreen;
+
+        if (!requestFullScreen) {}
+        var fullS = false;
+
+        $("#sect0").ready(function () {
+            setTimeout(function () {
+                $("#sect0").fadeOut();
+                $("#sect4").fadeIn(1000);
+                $("#sect2").fadeIn(2000);
+
+                if (window.innerWidth <= 750) {
+                    var x = $('#beat1').offset();
+                    var inst = document.getElementById("barra_beats")
+                    $('#sect4').css("height", $('#sect2').height() + 10);
+                    x.top = x.top - 30;
+                    x.left = x.left - 5;
+                    a = x.left;
+                    inst.style.left = x.left + "px"
+                    inst.style.top = x.top + "px"
+
+                    x = $('#rapea_').offset();
+                    inst = document.getElementById("barra_rapea")
+                    x.top = x.top - 30
+                    b = x.left;
+                    x.left = x.left - 5;
+                    inst.style.left = x.left + "px"
+                    inst.style.top = x.top + "px"
+                    $("#sect4").css("height", $("#sect2").height())
+                    a = b - a - 10
+                    $('#barra_beats').css("width", a);
+
+                    $('#barra_rapea').css("width", $('#rapea_').width() + 8);
+                    $('#barra_rapea').css("height", $('#barra_beats').height());
+
+                    x = $('#barra_beats').offset();
+                    inst = document.getElementById("inst_2")
+                    x.top = x.top - 5 - $('#inst_2').height() - $('#inst_2').height()
+                    x.left = x.left - 5;
+                    inst.style.left = x.left + "px"
+                    inst.style.top = x.top + "px"
+
+                    x = $('#barra_rapea').offset();
+                    inst = document.getElementById("inst_3")
+                    x.top = x.top - 5 - $('#inst_3').height()
+                    x.left = x.left - 106;
+                    inst.style.right = "0px"
+                    inst.style.top = x.top + "px"
+
+                    x = $('#t1').offset();
+                    inst = document.getElementById("inst_1")
+                    x.top = x.top - 5 - $('#inst_1').height()
+                    inst.style.top = x.top + "px"
+                    x = $('#inst_2').offset();
+                    inst = document.getElementById("inst_1")
+                    inst.style.left = x.left + "px"
+                } else {
+                    var x = $('#beat1_').offset();
+                    var inst = document.getElementById("barra_beats")
+                    $('#sect4').css("height", $('#sect2').height() + 10);
+                    x.top = x.top - 30;
+                    x.left = x.left - 5;
+                    a = x.left;
+                    inst.style.left = x.left + "px"
+                    inst.style.top = x.top + "px"
+
+                    x = $('#rapea').offset();
+                    inst = document.getElementById("barra_rapea")
+                    x.top = x.top - 30
+                    b = x.left;
+                    x.left = x.left - 5;
+                    inst.style.left = x.left + "px"
+                    inst.style.top = x.top + "px"
+
+                    a = b - a - 10
+                    $('#barra_beats').css("width", a);
+
+                    $('#barra_rapea').css("width", $('#rapea').width() + 8);
+                    $('#barra_rapea').css("height", $('#barra_beats').height());
+
+
+                    x = $('#barra_beats').offset();
+                    inst = document.getElementById("inst_2")
+                    x.top = x.top - 5 - $('#inst_2').height()
+                    x.left = x.left - 5;
+                    inst.style.left = x.left + "px"
+                    inst.style.top = x.top + "px"
+
+                    x = $('#barra_rapea').offset();
+                    inst = document.getElementById("inst_3")
+                    x.top = x.top - 5 - $('#inst_3').height()
+                    x.left = x.left - 106;
+                    inst.style.left = x.left + "px"
+                    inst.style.top = x.top + "px"
+
+
+                    x = $('#t1').offset();
+                    inst = document.getElementById("inst_1")
+                    x.top = x.top - 5 - $('#inst_1').height()
+                    inst.style.top = x.top + "px"
+                    x = $('#inst_2').offset();
+                    inst = document.getElementById("inst_1")
+                    inst.style.left = x.left + "px"
+                }
+
+            }, 1000)
+        });
+
+        function animate() {
+            option = 0;
+            count = 0;
+            for (var i = 0; i < 13; i++) {
+                option = i + 1;
+                if (selected[i] <= 4 && selected[i] >= 1) {
+                    count++;
+                } else {
+                    i = 15;
+                }
+            }
+            if (option == 13 && count == 13) {
+                option = 15;
+            }
+            if (option < 14) {
+                document.getElementById('t' + option).classList.add("animate")
+                if (window.innerWidth <= 750) {} else {
+                    document.getElementById('t' + option).click()
+                }
+            } else {
+                if (window.innerWidth <= 750) {
+                    document.getElementById('rapea_').classList.add("animate2")
+                } else {
+                    document.getElementById('rapea').classList.add("animate2")
+                }
+            }
+        }
+
+        function selectedOption(option) {
+            selected[selectedText - 1] = option;
+            document.getElementById('t' + selectedText).classList.remove("animate")
+            document.getElementById('t' + selectedText).innerHTML = texts[selectedText - 1][option - 1];
+            activeOption(option);
+            $('#optionPopup').modal('hide');
+
+            animate()
+        }
+
+        function changeState(t) {
+            if (window.innerWidth <= 750) {
+                $('#optionPopup').modal('show');
+                selectedText = t;
+                if (t != 5) {
+                    for (var i = 1; i <= 4; i++) {
+                        document.getElementById("option" + i + "_").style.fontSize = '2.5rem';
+                        document.getElementById('option' + i + "_").innerHTML = texts[t - 1][i - 1];
+                    }
+                } else {
+                    for (var i = 1; i <= 3; i++) {
+                        document.getElementById("option" + i + "_").style.fontSize = '1rem';
+                        document.getElementById('option' + i + "_").innerHTML = texts[t - 1][i - 1];
+                    }
+                    document.getElementById('option4_').innerHTML = '';
+                }
+            } else {
+                selectedText = t;
+                if (t != 5) {
+                    for (var i = 1; i <= 4; i++) {
+                        document.getElementById("option" + i).style.fontSize = '3rem';
+                        document.getElementById('option' + i).innerHTML = texts[t - 1][i - 1];
+                    }
+                } else {
+                    for (var i = 1; i <= 3; i++) {
+                        document.getElementById("option" + i).style.fontSize = '1rem';
+                        document.getElementById('option' + i).innerHTML = texts[t - 1][i - 1];
+                    }
+                    document.getElementById('option4').innerHTML = '';
+                }
+            }
+
+            activeOption(selected[t - 1])
+
+        }
+
+        function activeOption(option) {
+            if (window.innerWidth <= 750) {
+                for (var i = 1; i <= 4; i++) {
+                    document.getElementById("option" + i + "_").style.color = '#111111';
+                    document.getElementById("option" + i + "_").style.backgroundColor = '#ffffff';
+                }
+                if (option != 0) {
+                    document.getElementById("option" + option + "_").style.backgroundColor = '#ff6a48';
+                    document.getElementById("option" + option + "_").style.color = '#ffffff';
+                }
+            } else {
+                for (var i = 1; i <= 4; i++) {
+                    document.getElementById("option" + i).style.color = '#111111';
+                    document.getElementById("option" + i).style.backgroundColor = '#ffffff';
+                }
+                if (option != 0) {
+                    document.getElementById("option" + option).style.backgroundColor = '#ff6a48';
+                    document.getElementById("option" + option).style.color = '#ffffff';
+                }
+            }
+        }
+
+        function openFullscreen() {
+            if (!document.fullscreenElement && // alternative standard method
+                !document.mozFullScreenElement &&
+                !document.webkitFullscreenElement &&
+                !document.msFullscreenElement
+            ) { // current working methods
+                if (document.documentElement.requestFullscreen) {
+                    document.documentElement.requestFullscreen();
+                } else if (document.documentElement.msRequestFullscreen) {
+                    document.documentElement.msRequestFullscreen();
+                } else if (document.documentElement.mozRequestFullScreen) {
+                    document.documentElement.mozRequestFullScreen();
+                } else if (document.documentElement.webkitRequestFullscreen) {
+                    document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+                }
+                document.getElementById("full").src =
+                    "src/botones/full_screen_close.jpg";
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitExitFullscreen) {
+                    document.webkitExitFullscreen();
+                }
+                document.getElementById("full").src =
+                    "src/botones/full_screen.jpg";
+            }
+        }
+
+        function changeBeat(beat_num) {
+            try {
+                beat.pause()
+
+            } catch (e) {}
+            urlBeat = "src/audios/Hip_hop_" + beat_num + ".wav"
+            beat = new buzz.sound(urlBeat);
+
+            beat.play().loop();
+            //alert("Top position: " + x.top + " Left position: " + x.left);
+
+            document.getElementById("beat1_").src = "src/botones/beats/beat1_unpressed.jpg"
+            document.getElementById("beat2_").src = "src/botones/beats/beat2_unpressed.jpg"
+            document.getElementById("beat3_").src = "src/botones/beats/beat3_unpressed.jpg"
+            document.getElementById('beat' + beat_num + '_').src = "src/botones/beats/beat" + beat_num + "_pressed.jpg"
+            document.getElementById("beat1").src = "src/botones/beats/beat1_unpressed.jpg"
+            document.getElementById("beat2").src = "src/botones/beats/beat2_unpressed.jpg"
+            document.getElementById("beat3").src = "src/botones/beats/beat3_unpressed.jpg"
+            document.getElementById('beat' + beat_num).src = "src/botones/beats/beat" + beat_num + "_pressed.jpg"
+        }
+
+        function rapea() {
+            //selected = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+            var count = 0
+            for (var i = 0; i < 13; i++) {
+                if (selected[i] <= 4 && selected[i] >= 1) {
+                    count++;
+                }
+                //selectedText = i + 1
+                //selectedOption(selected[i])
+            }
+            if (count == 13) {
+                lyrics = '<p> Eeehhh ooohhh <br> Así se hace una canción de Hip Hop <br>' +
+                    'Eeehhh oohhh <br>' +
+                    'Con buenas rimas y el palito pal flow <br> Eeehhh ooohhh <br>' +
+                    ' Así se hace una canción de Hip Hop <br>' +
+                    ' Eeehhh oohhh <br>' +
+                    'Con buenas rimas y el palito pal flow </p> ' +
+                    '<p>Hay que escoger el tema para ' + texts[0][selected[0] - 1] +
+                    '<br> Trata que todo rime a la hora de ' + texts[1][selected[1] - 1] +
+                    '<br> Cuida cada' + texts[2][selected[2] - 1] +
+                    '<br> Deja expresar tu ' + texts[2][selected[3] - 1] +
+                    '<br> Hasta que se llene el renglón <br>' + texts[4][selected[4] - 1] +
+                    '<br><br> Y como rima ' +
+                    '<br>' + texts[5][selected[5] - 1] + 'con' + texts[6][selected[6] - 1] +
+                    '<br>' + texts[7][selected[7] - 1] + 'con' + texts[8][selected[8] - 1] +
+                    '<br>' + texts[9][selected[9] - 1] + 'con' + texts[10][selected[10] - 1] +
+                    '<br>' + texts[11][selected[11] - 1] + 'con' + texts[12][selected[12] - 1] +
+                    '<br> Eeehhh ooohhh' +
+                    '<br> Eeehhh ooohhh <br>' +
+                    '<p>Así se hace una canción de Hip Hop, Yeah</p>';
+
+                if (window.innerWidth <= 750) {
+                    $("#options-m").fadeOut(1000);
+                    $("#info-b").fadeOut(1000);
+                    $("#rec-r-m").fadeIn(1000);
+                    $("body,html").animate({
+                            scrollTop: $("#rec-r-m").offset().top
+                        },
+                        800
+                    );
+                } else {
+                    $("#options-b").hide();
+                    $("#info").fadeOut(1000);
+                    $("#beats-b").fadeOut(1000);
+                    $("#rec-r").fadeIn(1000);
+                }
+
+
+            }
+
+        }
+
+        document.getElementById("sect4").addEventListener("click", function () {
+            $("#sect4").fadeOut(1000);
+            animate()
+            changeBeat(2);
+        });
+
+        document.getElementById("rapea").addEventListener("click", () => {
+            rapea();
+        })
+
+        document.getElementById("rapea_").addEventListener("click", () => {
+            rapea();
+        })
+
+        document.getElementById("rec-b").addEventListener("click", async () => {
+            if (isRecording) {
+                beat.togglePlay()
+                recAudio = await recorder.stop();
+                recAudio = new buzz.sound(recAudio.audioUrl);
+                isRecording = false;
+                $("#rec-r").hide();
+                $("#play-r").fadeIn(1000);
+                clearInterval(fillProgress);
+            } else {
+                if (!recorder) {
+                    recorder = await recordAudio();
+                }
+                document.getElementById("rec-b").src = "src/animaciones/REC.gif"
+                document.getElementById("rec-text").innerHTML = "Grabando"
+                recorder.start();
+                isRecording = true;
+                current = 0;
+                fillProgress = setInterval(function () {
+                    current += 0.5;
+                }, 500);
+            }
+        })
+
+        document.getElementById("play-b").addEventListener("click", () => {
+
+            if (isRecording) {
+                document.getElementById("play-b").src = "src/botones/stop_play/play.png"
+                isRecording = false;
+                clearInterval(fillProgress);
+                recAudio.stop();
+                beat.stop();
+            } else {
+                document.getElementById("play-b").src = "src/botones/stop_play/stop.png"
+                isRecording = true;
+                var currentPlay = 0;
+                fillProgress = setInterval(function () {
+                    currentPlay += 0.1;
+                    if ((currentPlay * 100 / current) >= 100) {
+                        recAudio.stop();
+                        beat.stop();
+                        document.getElementById("play-b").click()
+                    }
+                }, 100);
+                beat = new buzz.sound(urlBeat);
+                beat.setVolume(50)
+                var finalTrack = new buzz.group([
+                    beat,
+                    recAudio
+                ]);
+                finalTrack.play();
+                if (!isActive) {
+                    beat.mute()
+                }
+            }
+        });
+
+        document.getElementById("rec-b-m").addEventListener("click", async () => {
+            if (isRecording) {
+                beat.togglePlay()
+                recAudio = await recorder.stop();
+                recAudio = new buzz.sound(recAudio.audioUrl);
+                isRecording = false;
+                $("#rec-r-m").hide();
+                $("#play-r-m").fadeIn(1000);
+                clearInterval(fillProgress);
+            } else {
+                if (!recorder) {
+                    recorder = await recordAudio();
+                }
+                document.getElementById("rec-b-m").src = "src/animaciones/REC.gif"
+                document.getElementById("rec-text-m").innerHTML = "Grabando"
+                recorder.start();
+                isRecording = true;
+                current = 0;
+                fillProgress = setInterval(function () {
+                    current += 0.5;
+                }, 500);
+            }
+        })
+
+        document.getElementById("play-b-m").addEventListener("click", () => {
+            isActive = false;
+            $("#activate-beat-m").click();
+            if (isRecording) {
+                document.getElementById("play-b-m").src = "src/botones/stop_play/play.png"
+                isRecording = false;
+                clearInterval(fillProgress);
+                recAudio.stop();
+                beat.stop();
+            } else {
+                document.getElementById("play-b-m").src = "src/botones/stop_play/stop.png"
+                isRecording = true;
+                var currentPlay = 0;
+                fillProgress = setInterval(function () {
+                    currentPlay += 0.1;
+                    if (recAudio.isEnded()) {
+                        recAudio.stop();
+                        beat.stop();
+                        document.getElementById("play-b-m").click()
+                    }
+                }, 100);
+                beat = new buzz.sound(urlBeat);
+                var finalTrack = new buzz.group([
+                    beat,
+                    recAudio
+                ]);
+                finalTrack.play();
+                beat.setVolume(50)
+                if (!isActive) {
+                    beat.mute()
+                }
+            }
+        });
+
+        document.getElementById("info").addEventListener("click", () => {
+            $("#sect4").fadeIn(1000);
+        })
+
+        document.getElementById("info-b").addEventListener("click", () => {
+            $("#sect4").fadeIn(1000);
+        })
+
+        document.getElementById("activate-beat").addEventListener("click", () => {
+            beat.toggleMute()
+            if (isActive) {
+                document.getElementById("activate-beat").innerHTML = 'Activar Beat';
+                document.getElementById("activate-beat").style.color = '#ff6a48';
+                document.getElementById("activate-beat").style.backgroundColor = '#ffffff';
+                isActive = false;
+                beat.mute()
+            } else {
+                document.getElementById("activate-beat").innerHTML = 'Desactivar Beat';
+                document.getElementById("activate-beat").style.color = '#ffffff';
+                document.getElementById("activate-beat").style.backgroundColor = '#ff6a48';
+                isActive = true;
+            }
+        })
+
+        document.getElementById("activate-beat-m").addEventListener("click", () => {
+            beat.toggleMute()
+            if (isActive) {
+                document.getElementById("activate-beat-m").innerHTML = 'Activar Beat';
+                document.getElementById("activate-beat-m").style.color = '#ff6a48';
+                document.getElementById("activate-beat-m").style.backgroundColor = '#ffffff';
+                isActive = false;
+                beat.mute()
+            } else {
+                document.getElementById("activate-beat-m").innerHTML = 'Desactivar Beat';
+                document.getElementById("activate-beat-m").style.color = '#ffffff';
+                document.getElementById("activate-beat-m").style.backgroundColor = '#ff6a48';
+                isActive = true;
+            }
+        })
+
+        document.addEventListener('visibilitychange', function () {
+            try {
+                if (document
+                    .hidden
+                ) {
+                    beat.pause()
+                } else {
+                    beat.play()
+                }
+            } catch (e) {
+
+            }
+
+        }, false)
+    </script>
+
+    <script>
+        var isRecording = false;
+        var alarm;
+        const recordAudio = () =>
+            new Promise(async resolve => {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    audio: true
+                });
+                const mediaRecorder = new MediaRecorder(stream);
+                let audioChunks = [];
+
+                mediaRecorder.addEventListener('dataavailable', event => {
+                    audioChunks.push(event.data);
+                });
+
+                const start = () => {
+                    beat.pause();
+                    beat = new buzz.sound(urlBeat);;
+                    beat.play();
+                    audioChunks = [];
+                    mediaRecorder.start();
+                };
+
+                const stop = () =>
+                    new Promise(resolve => {
+                        mediaRecorder.addEventListener('stop', () => {
+                            const audioBlob = new Blob(audioChunks);
+                            const audioUrl = URL.createObjectURL(audioBlob);
+                            const audio = new buzz.sound(urlBeat);
+                            audio.setVolume(10);
+                            const play = () => audio.play();
+                            resolve({
+                                audioChunks,
+                                audioBlob,
+                                audioUrl,
+                                play
+                            });
+                        });
+                        mediaRecorder.stop();
+                    });
+
+                resolve({
+                    start,
+                    stop
+                });
+            });
+
+        const sleep = time => new Promise(resolve => setTimeout(resolve, time));
+
+        let recorder;
+    </script>
+
+</body>
+
+
+</html>
