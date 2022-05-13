@@ -7,5 +7,5 @@
 #### 5. para ejecutar las apis se uso Thunder client el cual se encuentra en extensiones de visual studio.
 #### 6. en thunder cliente den la opcion de new request luego le dan la opcion de get,post,delete o put para asi comprobrar el funcionamiento de las apis, en la parte de body se envia como .json los datos para crear nuevas salas.
 #### 7. En la parte del cliente deben ingresar a la carpeta cliente y ejecutar el comando npm i
-#### 8. ejecutar  npm run dev para visualisar el entorno.
+#### 8. ejecutar  npm run dev para visualizar el entorno.
 
